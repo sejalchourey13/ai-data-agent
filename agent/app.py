@@ -33,7 +33,7 @@ Answer the question:
                     "prompt": prompt,
                     "stream": False
                 },
-                timeout=30
+                timeout=120
             )
             result = response.json()
             st.subheader(" AI Response:")
