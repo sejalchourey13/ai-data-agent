@@ -7,7 +7,7 @@ import json
 df = pd.read_csv("data/dataset.csv")
 summary = df.groupby("product")["sales"].sum().to_dict()
 
-st.title(" AI Data Analyst Agent")
+st.title("AI Data Analyst Agent - Version 2")
 
 # User input
 user_question = st.text_input("Ask your question:")
