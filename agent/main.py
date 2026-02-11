@@ -21,7 +21,7 @@ Answer the question:
 
 # Call Ollama API
 response = requests.post(
-    "http://localhost:11434/api/generate",
+    "http://ollama:11434/api/generate",
     json={
         "model": "gemma:2b",
         "prompt": prompt,
