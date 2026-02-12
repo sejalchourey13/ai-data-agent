@@ -5,7 +5,7 @@ import json
 
 # Load dataset
 df = pd.read_csv("data/dataset.csv")
-summary = df.groupby("product")["sales"].sum().to_dict()
+summary = df.groupby("Category")["Sales"].sum().to_dict()
 
 st.title("AI Data Analyst Agent - Version 2")
 

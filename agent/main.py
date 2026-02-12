@@ -6,7 +6,7 @@ import json
 df = pd.read_csv("data/dataset.csv")
 
 # Basic analysis
-summary = df.groupby("product")["sales"].sum().to_dict()
+summary = df.groupby("Category")["Sales"].sum().to_dict()
 
 user_question = "Which product is performing best and why?"
 
