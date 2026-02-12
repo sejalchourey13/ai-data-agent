@@ -23,7 +23,8 @@ Answer the question:
 response = requests.post(
     "http://ollama:11434/api/generate",
     json={
-        "model": "gemma:2b",
+        # "model": "gemma:2b",
+        "model": "tinyllama",
         "prompt": prompt,
         "stream": False
     }
